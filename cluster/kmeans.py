@@ -39,7 +39,7 @@ class KMeans:
 
     def predict(self, mat: np.ndarray) -> np.ndarray:
         """
-        Predicts the cluster labels for a provided matrix --
+        Predicts the cluster labels for a provided matrix of data points--
             question: what sorts of data inputs here would prevent the code from running?
             How would you catch these sorts of end-user related errors?
             What if, for example, the matrix is of a different number of features than
@@ -56,7 +56,8 @@ class KMeans:
 
     def get_error(self) -> float:
         """
-        Returns the final squared-mean error of the fit model
+        Returns the final squared-mean error of the fit model. You can either do this by storing the
+        original dataset or recording it following the end of model fitting.
 
         outputs:
             float
@@ -65,7 +66,7 @@ class KMeans:
 
     def get_centroids(self) -> np.ndarray:
         """
-        Returns the centroid locations of the fit model
+        Returns the centroid locations of the fit model.
 
         outputs:
             np.ndarray
