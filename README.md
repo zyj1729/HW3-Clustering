@@ -39,7 +39,7 @@ Your KMeans algorithm will be implemented using a scikit-learn style API (i.e. i
 
 The intuition behind splitting up the fit/predict methods is that you may want to cluster novel data using the centroids calculated from some initial training set.
 
-Your Silhouette scoring metric will be implemented using a scikit-learn style metric API (i.e. init/score) which will require 2 steps to run. 
+Your Silhouette scoring metric will be implemented using a scikit-learn style metric API (i.e. init/score) which will require 2 steps to run. For this, we will also ask you to write a test that compares your Silhouette scoring function with the one in `sklearn`--`sklearn.metrics.silhouette_score`. 
 
 When you are writing your code, try to make sure you have some methods in place to start to anticipate end-user mis-use of your code. Should the code produce a result if, for example, the functions are run out of order?
 What if the data that is provided is invalid somehow? 
@@ -81,7 +81,7 @@ scores = silhouette.score(labels)
 
 [ TODO ] Unit Testing  
   [ ] KMeans Class  
-  [ ] Silhouette Class
+  [ ] Silhouette Class -- make sure to test against sklearn
 
 [ TODO ] Packaging  
   [ ] pip installable module  
@@ -92,10 +92,9 @@ For those who are particularly interested: try to implement the [k-means++](http
 We won't give extra points for this, but it is a good exercise.
 
 # Getting Started
-To get started you will need to fork this repo onto your own github account. Work on your codebase from your own repo and commit changes. We have listed the minimum (and maximum) python module requirements in `requirements.txt` 
+To get started you will need to fork this repo onto your own github account. Work on your codebase from your own repo and commit changes. We have listed the minimum (and maximum) python module requirements in `requirements.txt`, although keep in mind beyond these you will also need `sklearn` to implement the Silhouette scoring test. 
 
-It will save you a lot of work to implement scipy.spatial's functions for distance computation (hint: this is a particularly good way to 
-scaffold your implementation of different distance metrics), for example, rather than write some of your own. 
+It will save you a lot of work to implement `scipy.spatial`'s functions for distance computation, for example, rather than write some of your own, although of course you are welcome to do so. 
 
 ## Using Utility Functions
 We've built up some utility functions for you to use to test and visualize your implementation of K-Means and Silhouette scoring. There are 3 functions that you can use for these tests and you can read more about how to use them in their docstrings + usage below:
