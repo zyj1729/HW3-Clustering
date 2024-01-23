@@ -89,7 +89,6 @@ scores = silhouette.score(labels)
 
 For those who are particularly interested: try to implement the [k-means++](https://en.wikipedia.org/wiki/K-means%2B%2B) initialization algorithm. This is a method used in sklearn to initialize the clusters to best guesses and dramatically increases the speed of convergence for the algorithm.
 
-We won't give extra points for this, but it is a good exercise.
 
 # Getting Started
 To get started you will need to fork this repo onto your own github account. Work on your codebase from your own repo and commit changes. We have listed the minimum (and maximum) python module requirements in `requirements.txt`, although keep in mind beyond these you will also need `sklearn` to implement the Silhouette scoring test. 
@@ -156,8 +155,8 @@ I've also included an example output for the multipanel visualization
 ![multipanel-data](figures/example_multipanel.png)
 
 # Grading (Total: 10)
-* KMeans Implementation (3)
-* Silhouette Implementation (2)
-* Correct API (1)
-* Unit Tests (2)
-* Pip Installable / Actions (2)
+* KMeans implementation (4)
+* Silhouette implementation (2)
+* Unit tests (2)
+* Additional edge case/unit test (1) 
+* Code readability (1) 
