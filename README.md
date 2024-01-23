@@ -160,7 +160,7 @@ Make sure to push all your code to github, ensure that your unit tests are corre
 
 ### Grading (Total: 10)
 * KMeans implementation (4)
-  * Implements Lloyd's Algorithm correctly (3)
+  * Implements Lloyd's Algorithm correctly (2)
   * Correctly exits on iteration number or tolerance (1)
   * Functionality is reasonable on test data (1) 
 * Silhouette implementation (2)
