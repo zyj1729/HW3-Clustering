@@ -1,4 +1,4 @@
-# Project 5
+# Assignment 3
 Implementation of KMeans and Silhouette Scoring
 
 # Assignment
@@ -154,9 +154,21 @@ I've also included an example output for the multipanel visualization
 
 ![multipanel-data](figures/example_multipanel.png)
 
-# Grading (Total: 10)
+
+## Completing the Assignment
+Make sure to push all your code to github, ensure that your unit tests are correct, and submit a link to your repo in the HW submission form, found [here](https://forms.gle/oCSiGvUeJfJfa6e37). 
+
+### Grading (Total: 10)
 * KMeans implementation (4)
+  * Implements Lloyd's Algorithm correctly (3)
+  * Correctly exits on iteration number or tolerance (1)
+  * Functionality is reasonable on test data (1) 
 * Silhouette implementation (2)
+  * Silhouette score  correctly implemented (1)
+  * Silhouette score is reasonably close to sklearn implementation (1)
 * Unit tests (2)
-* Additional edge case/unit test (1) 
-* Code readability (1) 
+* Handles edge cases/error checks (1) 
+* Code readability (1)
+* Extra credit (1)
+  * Github actions/workflow (up to +0.5)
+  * kmeans++ implementation (up to +0.5)
