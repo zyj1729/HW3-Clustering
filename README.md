@@ -1,3 +1,4 @@
+![BuildStatus](https://github.com/zyj1729/HW2-BFS/actions/workflows/main.yml/badge.svg?event=push)
 # Assignment 3
 Implementation of KMeans and Silhouette Scoring
 
