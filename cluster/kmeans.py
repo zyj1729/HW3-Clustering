@@ -95,18 +95,17 @@ class KMeans:
         
         # Iteratively update cluster centers
         while ii < self.max_iter and _tol > self.tol:
-            seps, sse = self._sse(mat, centers)
-            _tol = abs(sse - ori)  # Calculate change in error
-            ori = sse  # Update previous error
-            ii += 1
-            
             # Update each cluster center to be the mean of its assigned points
             for j in range(self.k):
                 temp = mat[seps == j]
                 if len(temp) > 0:
                     new = temp.mean(axis=0)
                     centers[j] = new
-        
+            seps, sse = self._sse(mat, centers)
+            _tol = abs(sse - ori)  # Calculate change in error
+            ori = sse  # Update previous error
+            ii += 1
+            
         # Store final labels, centers, and SSE
         self.labels = seps
         self.centers = centers

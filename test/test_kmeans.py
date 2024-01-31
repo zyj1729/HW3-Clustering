@@ -6,6 +6,7 @@ def test_kmeans_init():
     with pytest.raises(Exception) as excinfo:
         kmeans = KMeans(k=0)
     kmeans = KMeans(k=3)
+    kmeans = KMeans(k=3, init_style = "++")
     assert kmeans.k == 3, "KMeans k parameter not initialized correctly"
 
 def test_kmeans_fit_predict():
